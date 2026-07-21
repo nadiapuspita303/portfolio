@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nadia Puspita Sari — Portofolio | Data & Business Analytics</title>
+<meta name="description" content="Portofolio Nadia Puspita Sari, lulusan Hubungan Internasional dengan kemampuan analitis dan organisasi — dashboard data, riset, dan komunikasi bisnis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="navbar__logo">Nadia Puspita Sari</a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="assets/cv.pdf" download class="btn btn--accent btn--small">Download CV</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero container">
+    <div class="hero__text">
+      <p class="eyebrow">International Relations Graduate</p>
+      <h1>Fresh Graduate with Analytical, Administrative & Organizational Skills</h1>
+      <p class="hero__sub">
+        Menerjemahkan kemampuan riset dan penulisan dari latar belakang Hubungan Internasional
+        menjadi insight berbasis data, didukung kemampuan teknis di Tableau, Power BI, dan Excel.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--accent">Lihat Portofolio</a>
+        <a href="assets/cv.pdf" download class="btn btn--outline">Download CV</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <div class="hero__photo-frame">
+        <!-- Ganti src di bawah ini dengan foto profesional Anda -->
+        <img src="assets/profile-placeholder.jpg" alt="Foto profil Nadia Puspita Sari" onerror="this.style.display='none'; this.parentElement.classList.add('hero__photo-frame--empty')">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED DASHBOARD ============ -->
+  <section class="featured container" aria-label="Featured Dashboard">
+    <div class="featured__label">
+      <p class="eyebrow">Featured Work</p>
+      <h2>Dashboard Terbaik</h2>
+      <p class="featured__desc">Contoh dashboard interaktif yang menunjukkan proses analisis dari data mentah hingga insight bisnis.</p>
+      <div class="featured__nav">
+        <button class="carousel-btn" id="carouselPrev" aria-label="Dashboard sebelumnya">&#8592;</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-btn" id="carouselNext" aria-label="Dashboard berikutnya">&#8594;</button>
+      </div>
+    </div>
+
+    <div class="featured__viewer">
+      <div class="carousel" id="carousel">
+
+        <article class="carousel__slide is-active">
+          <div class="carousel__embed">
+            <img src="assets/images/dashboard-ekspor-preview.png" alt="Dashboard Analisis Nilai Ekspor Indonesia">
+          </div>
+          <div class="carousel__caption">
+            <span class="tag">Dashboard</span>
+            <h3>Dashboard Analisis Nilai Ekspor Indonesia</h3>
+            <a href="https://public.tableau.com/app/profile/nadia.p2117/viz/DASHBOARDANALISISNLAIEKSPORINDONESIA/DashboardNilaiEkspor" class="link-arrow">Buka Dashboard Interaktif ↗</a>
+          </div>
+        </article>
+
+        <article class="carousel__slide">
+          <div class="carousel__embed">
+            <img src="assets/images/dashboard-migas-preview.png" alt="Dashboard Perdagangan Migas Indonesia">
+          </div>
+          <div class="carousel__caption">
+            <span class="tag">Dashboard</span>
+            <h3>Dashboard Perdagangan Migas Indonesia</h3>
+            <a href="https://drive.google.com/drive/folders/1a6gcIGSQf8kqVOcNRUAPwlrIsPWYRsTE?usp=drive_link" class="link-arrow">Buka Dashboard Interaktif ↗</a>
+          </div>
+        </article>
+
+        <article class="carousel__slide">
+          <div class="carousel__embed">
+            <img src="assets/images/dashboard-sales-performance-preview.png" alt="Sales Performance Dashboard">
+          </div>
+          <div class="carousel__caption">
+            <span class="tag">Dashboard</span>
+            <h3>Sales Performance Dashboard</h3>
+            <a href="https://public.tableau.com/app/profile/nadia.p2117/viz/dashboardSalesPerformanceSampleSuperstore/SalesDashboard" class="link-arrow">Buka Dashboard Interaktif ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about container" id="about">
+    <p class="eyebrow">About Me</p>
+    <h2>Dari Riset Hubungan Internasional ke Data &amp; Business Analytics</h2>
+    <p>
+      Selama menempuh studi Hubungan Internasional, saya terbiasa membedah isu kompleks melalui riset
+      mendalam, menyusun argumen berbasis data, dan menyampaikannya dalam tulisan yang jelas dan terstruktur.
+      Kemampuan inilah yang saya bawa ketika mendalami data analytics, memahami bahwa di balik setiap angka
+      selalu ada konteks dan cerita yang perlu digali, bukan sekadar dijadikan grafik.
+    </p>
+    <p>
+      Saat ini saya memperkuat kemampuan tersebut dengan penguasaan tools seperti Tableau, Power BI, dan Excel,
+      untuk mengubah data mentah menjadi insight yang dapat ditindaklanjuti secara bisnis, sambil tetap
+      mengandalkan kekuatan riset, penulisan, dan komunikasi lintas kepentingan yang telah terasah sejak masa kuliah.
+    </p>
+  </section>
+
+  <!-- ============ TECHNICAL SKILLS ============ -->
+  <section class="skills container" id="skills">
+    <p class="eyebrow">Skillset</p>
+    <h2>Kemampuan Utama</h2>
+
+    <div class="skills__grid">
+      <div class="skill-card">
+        <h3>Analytical &amp; Technical</h3>
+        <ul>
+          <li>Tableau</li>
+          <li>Power BI</li>
+          <li>Microsoft Excel</li>
+          <li>Data Cleaning &amp; Visualization</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Organizational &amp; Communication</h3>
+        <ul>
+          <li>Business &amp; Academic Writing</li>
+          <li>Research Methodology</li>
+          <li>Dokumentasi &amp; Notulensi</li>
+          <li>Koordinasi Lintas Tim</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Design</h3>
+        <ul>
+          <li>Canva</li>
+          <li>Presentation Design</li>
+          <li>Visual Communication</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO PROJECTS ============ -->
+  <section class="projects container" id="projects">
+    <p class="eyebrow">Portfolio</p>
+    <h2>Portfolio Projects</h2>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn is-active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+      <button class="filter-btn" data-filter="administrative">Administrative</button>
+      <button class="filter-btn" data-filter="research">Research &amp; Writing</button>
+      <button class="filter-btn" data-filter="visual">Visual Communication</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card" data-category="dashboard">
+        <div class="project-card__thumb"><img src="assets/images/dashboard-ekspor-preview.png" alt="Dashboard Analisis Nilai Ekspor Indonesia"></div>
+        <div class="project-card__body">
+          <span class="tag">Dashboard</span>
+          <h3>Dashboard Analisis Nilai Ekspor Indonesia</h3>
+          <p>Analisis tren ekspor menggunakan Tableau untuk mengidentifikasi pola perdagangan.</p>
+          <a href="./projects/dashboard-analisis-ekspor.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="dashboard">
+        <div class="project-card__thumb"><img src="assets/images/dashboard-migas-preview.png" alt="Dashboard Perdagangan Migas Indonesia"></div>
+        <div class="project-card__body">
+          <span class="tag">Dashboard</span>
+          <h3>Dashboard Perdagangan Migas Indonesia</h3>
+          <p>Visualisasi data perdagangan migas untuk mendukung pengambilan keputusan.</p>
+          <a href="./projects/dashboard-perdagangan-migas.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="dashboard">
+        <div class="project-card__thumb"><img src="assets/images/dashboard-sales-performance-preview.png" alt="Sales Performance Dashboard"></div>
+        <div class="project-card__body">
+          <span class="tag">Dashboard</span>
+          <h3>Sales Performance Dashboard</h3>
+          <p>Dashboard performa penjualan dengan breakdown per wilayah dan produk.</p>
+          <a href="./projects/dashboard-sales-performance.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="administrative">
+        <div class="project-card__thumb"><img src="assets/images/data-hasil-belajar-siswa-preview.png" alt="Data Hasil Belajar Siswa (Microsoft Excel)"></div>
+        <div class="project-card__body">
+          <span class="tag">Administrative</span>
+          <h3>Data Hasil Belajar Siswa (Microsoft Excel)</h3>
+          <p>Workbook administrasi nilai siswa menggunakan rumus, PivotTable, dan fitur administrasi lainnya.</p>
+          <a href="./projects/data-hasil-belajar-siswa.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="administrative">
+        <div class="project-card__thumb"><img src="assets/images/excel-use-case-lookup-preview.png" alt="Microsoft Excel: Use Case Lookup (MySkill)"></div>
+        <div class="project-card__body">
+          <span class="tag">Administrative</span>
+          <h3>Microsoft Excel: Use Case Lookup (MySkill)</h3>
+          <p>Latihan penerapan fungsi lookup (VLOOKUP, HLOOKUP, INDEX MATCH) untuk mereferensikan data antar sheet.</p>
+          <a href="./projects/excel-use-case-lookup.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="administrative">
+        <div class="project-card__thumb"><img src="assets/images/latihan-slip-gaji-preview.png" alt="Latihan Mandiri – Pembuatan Slip Gaji"></div>
+        <div class="project-card__body">
+          <span class="tag">Administrative</span>
+          <h3>Latihan Mandiri – Pembuatan Slip Gaji</h3>
+          <p>Latihan mandiri pembuatan slip gaji karyawan mencakup gaji pokok, tunjangan, potongan, hingga total gaji.</p>
+          <a href="./projects/latihan-slip-gaji.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="research">
+        <div class="project-card__thumb"><img src="assets/images/bank-sampah-ecobrick-kkn-preview.png" alt="Inovasi Pengelolaan Sampah oleh Mahasiswa Kuliah Kerja Nyata UNRI 2024 Melalui Bank Sampah dan Ecobrick di Desa Koto Tuo, Indragiri Hulu"></div>
+        <div class="project-card__body">
+          <span class="tag">Research &amp; Writing</span>
+          <h3>Inovasi Pengelolaan Sampah oleh Mahasiswa Kuliah Kerja Nyata UNRI 2024 Melalui Bank Sampah dan Ecobrick di Desa Koto Tuo, Indragiri Hulu</h3>
+          <p>Jurnal luaran kukerta mengenai program Bank Sampah dan Ecobrick di Desa Koto Tuo, Indragiri Hulu.</p>
+          <a href="./projects/bank-sampah-ecobrick-kkn.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="research">
+        <div class="project-card__thumb"><img src="assets/images/lese-majeste-thailand-preview.jpg" alt="Pengaruh Lèse Majesté terhadap Kebebasan Berekspresi dan Peran Kritis Media di Thailand"></div>
+        <div class="project-card__body">
+          <span class="tag">Research &amp; Writing</span>
+          <h3>Pengaruh Lèse Majesté terhadap Kebebasan Berekspresi dan Peran Kritis Media di Thailand</h3>
+          <p>Menganalisis dampak penerapan hukum lèse majesté di Thailand terhadap kebebasan berekspresi, peran media, dan perkembangan demokrasi.</p>
+          <a href="./projects/lese-majeste-thailand.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="visual">
+        <div class="project-card__thumb"><img src="assets/images/pitch-deck-paragon-1.png" alt="Pitch Deck Paragon IN:PACT 2025"></div>
+        <div class="project-card__body">
+          <span class="tag">Visual Communication</span>
+          <h3>Pitch Deck Paragon IN:PACT 2025</h3>
+          <p>Pitch deck yang dikembangkan untuk kompetisi Paragon IN:PACT 2025.</p>
+          <a href="./projects/pitch-deck-paragon-inpact.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="visual">
+        <div class="project-card__thumb"><img src="assets/images/poster-promosi-branding-preview.png" alt="Poster Promosi dan Branding"></div>
+        <div class="project-card__body">
+          <span class="tag">Visual Communication</span>
+          <h3>Poster Promosi dan Branding</h3>
+          <p>Poster promosi yang dirancang untuk pemasaran produk makanan.</p>
+          <a href="./projects/poster-promosi-branding.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="visual">
+        <div class="project-card__thumb"><img src="assets/images/flyer-komahi-issue-center-thumb.png" alt="Flyer KOMAHI Issue Center"></div>
+        <div class="project-card__body">
+          <span class="tag">Visual Communication</span>
+          <h3>Flyer KOMAHI Issue Center</h3>
+          <p>Flyer publikasi kegiatan organisasi mahasiswa menggunakan komunikasi visual yang efektif.</p>
+          <a href="./projects/flyer-komahi-issue-center.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="visual">
+        <div class="project-card__thumb"><img src="assets/images/publikasi-dokumentasi-kukerta-preview.png" alt="Desain Publikasi dan Dokumentasi Kukerta"></div>
+        <div class="project-card__body">
+          <span class="tag">Visual Communication</span>
+          <h3>Desain Publikasi dan Dokumentasi Kukerta</h3>
+          <p>Kumpulan media publikasi yang dirancang untuk kegiatan Kuliah Kerja Nyata.</p>
+          <a href="./projects/publikasi-dokumentasi-kukerta.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="certificates container" id="certificates">
+    <p class="eyebrow">Credentials</p>
+    <h2>Certificates</h2>
+
+    <div class="cert-grid">
+      <!-- Ganti isi di bawah dengan sertifikat yang Anda miliki -->
+      <div class="cert-card">
+        <h3>AI For Public Impact</h3>
+        <p class="cert-card__meta">Microsoft Indonesia · 2025</p>
+        <a href="https://drive.google.com/file/d/1WxdMP-8rSHEfz-j5Ke1dLcRBxQT0yPuf/view?usp=drive_link" class="link-arrow">Lihat Sertifikat ↗</a>
+      </div>
+      <div class="cert-card">
+        <h3>Index Match, Vlookup and Hlookup in Ms. Excel</h3>
+        <p class="cert-card__meta">MySkill · 2025</p>
+        <a href="https://drive.google.com/file/d/125te42YNo5iEPLF80Y_vTirqA5zPtotJ/view?usp=sharing" class="link-arrow">Lihat Sertifikat ↗</a>
+      </div>
+      <div class="cert-card">
+        <h3>Data Analysis Fundamental</h3>
+        <p class="cert-card__meta">MySkill · 2025</p>
+        <a href="https://drive.google.com/file/d/1J43TD-WAAGzjLy1tbTpl6bH12o8U1g8K/view?usp=sharing" class="link-arrow">Lihat Sertifikat ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="container footer__inner">
+    <div class="footer__info">
+      <h2>Mari Terhubung</h2>
+      <p>Terbuka untuk peluang di bidang Data Analytics, International Relations, maupun Administration.</p>
+      <div class="footer__links">
+        <a href="mailto:nadiapuspita303@email.com">nadiapuspita303@email.com</a>
+        <a href="https://linkedin.com/in/nadia-puspita-sarii" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <a href="assets/cv.pdf" download class="btn btn--accent">Download CV</a>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Nadia Puspita Sari. Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

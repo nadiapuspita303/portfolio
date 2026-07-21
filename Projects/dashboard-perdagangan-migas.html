@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Perdagangan Migas Indonesia — Nadia Puspita Sari</title>
+<meta name="description" content="Studi kasus dashboard perdagangan migas Indonesia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../project.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR (identik dengan Homepage) ============ -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="../index.html#home" class="navbar__logo">Nadia Puspita Sari</a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#skills">Skills</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#certificates">Certificates</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="../assets/cv.pdf" download class="btn btn--accent btn--small">Download CV</a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ BREADCRUMB ============ -->
+  <div class="container breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb__sep">/</span>
+    <a href="../index.html#projects">Projects</a>
+    <span class="breadcrumb__sep">/</span>
+    <span class="breadcrumb__current">Dashboard Perdagangan Migas Indonesia</span>
+  </div>
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="project-hero container">
+    <p class="eyebrow">Dashboard</p>
+    <h1>Dashboard Perdagangan Migas Indonesia</h1>
+
+    <div class="project-hero__tools">
+      <span class="tag">BPS</span>
+      <span class="tag">1996–2024</span>
+      <span class="tag">Power BI</span>
+      <span class="tag">Excel</span>
+    </div>
+
+    <p class="project-hero__summary">
+      Dashboard interaktif yang menganalisis perkembangan perdagangan migas Indonesia periode 1996–2024 melalui nilai ekspor, impor, neraca perdagangan, dan komposisi komoditas.
+    </p>
+  </section>
+
+  <!-- ============ 2. PROJECT OVERVIEW ============ -->
+  <section class="pd-section container">
+    <div class="pd-section__head">
+      <p class="eyebrow">Project Overview</p>
+      <h2>Project Overview</h2>
+    </div>
+
+    <div class="overview-grid">
+      <div class="overview-block">
+        <h3>Project Background</h3>
+        <p>Perdagangan migas merupakan salah satu indikator penting dalam aktivitas perdagangan internasional Indonesia. Dashboard ini dikembangkan untuk menyajikan data ekspor, impor, dan neraca perdagangan migas secara visual sehingga tren serta komposisi perdagangan dapat dianalisis dengan lebih mudah.</p>
+      </div>
+      <div class="overview-block">
+        <h3>Project Objective</h3>
+        <p>Dashboard ini bertujuan untuk menganalisis perkembangan perdagangan migas Indonesia, membandingkan nilai ekspor dan impor, mengidentifikasi komoditas utama, serta membantu memperoleh insight melalui visualisasi interaktif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. DATASET ============ -->
+  <section class="pd-section container">
+    <div class="pd-section__head">
+      <p class="eyebrow">Dataset</p>
+      <h2>Dataset</h2>
+    </div>
+
+    <div class="dataset-facts">
+      <div>
+        <span class="dataset-fact__label">Sumber Data</span>
+        <span class="dataset-fact__value">Badan Pusat Statistik (BPS)</span>
+      </div>
+      <div>
+        <span class="dataset-fact__label">Periode Data</span>
+        <span class="dataset-fact__value">1996–2024</span>
+      </div>
+      <div>
+        <span class="dataset-fact__label">Jumlah Data</span>
+        <span class="dataset-fact__value">174 baris</span>
+      </div>
+    </div>
+
+    <div class="dataset-fields">
+      <span class="tag">Tahun</span>
+      <span class="tag">Nilai (Juta USD)</span>
+      <span class="tag">Volume (Ribu Ton)</span>
+      <span class="tag">Impor</span>
+      <span class="tag">Ekspor</span>
+      <span class="tag">Komoditas</span>
+    </div>
+  </section>
+
+  <!-- ============ 4. DATA PREPARATION ============ -->
+  <section class="pd-section container">
+    <div class="pd-section__head">
+      <p class="eyebrow">Data Preparation</p>
+      <h2>Data Preparation</h2>
+    </div>
+
+    <div class="prep-grid">
+      <div class="prep-block">
+        <h3>Data Cleaning</h3>
+        <ul>
+          <li>Memeriksa nilai kosong (missing values).</li>
+          <li>Menyesuaikan tipe data.</li>
+          <li>Menghapus data yang tidak diperlukan.</li>
+          <li>Menyeragamkan format penamaan.</li>
+        </ul>
+      </div>
+      <div class="prep-block">
+        <h3>Data Transformation</h3>
+        <ul>
+          <li>Transformasi data menggunakan Power Query.</li>
+          <li>Mengelompokkan data berdasarkan tahun, komoditas, dan jenis perdagangan.</li>
+          <li>Menggabungkan (merge) data nilai dan volume.</li>
+          <li>Menyiapkan field yang digunakan pada dashboard.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. DASHBOARD PREVIEW ============ -->
+  <section class="pd-section container">
+    <div class="pd-section__head">
+      <p class="eyebrow">Dashboard Preview</p>
+      <h2>Dashboard Preview</h2>
+    </div>
+
+    <div class="preview-frame">
+      <div class="preview-frame__embed">
+        <a
+          href="https://drive.google.com/drive/folders/1a6gcIGSQf8kqVOcNRUAPwlrIsPWYRsTE?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <img
+          src="../assets/images/dashboard-migas-preview.png"
+          alt="Dashboard Perdagangan Migas Indonesia">
+
+        </a>
+      </div>
+
+      <div class="preview-frame__actions">
+        <a 
+          href="https://drive.google.com/drive/folders/1a6gcIGSQf8kqVOcNRUAPwlrIsPWYRsTE?usp=drive_link" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn btn--accent btn--small">
+          Lihat Dashboard Interaktif ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. INSIGHTS (Key Findings + Recommendations) ============ -->
+  <section class="pd-section container">
+    <div class="pd-section__head">
+      <p class="eyebrow">Insights</p>
+      <h2>Insights</h2>
+    </div>
+
+    <div class="insights-block">
+      <h3>Key Findings</h3>
+      <ul class="insights-list">
+        <li>Neraca perdagangan migas menunjukkan tren surplus pada awal periode, kemudian beralih menjadi defisit dalam beberapa tahun terakhir.</li>
+        <li>Nilai impor migas secara umum lebih tinggi dibandingkan nilai ekspor sehingga menghasilkan defisit perdagangan.</li>
+        <li>Gas alam menjadi komoditas ekspor utama, sedangkan impor didominasi oleh minyak mentah dan hasil minyak.</li>
+      </ul>
+    </div>
+
+    <div class="insights-block">
+      <h3>Recommendations</h3>
+      <ul class="insights-list insights-list--recommendations">
+        <li>Meningkatkan nilai tambah komoditas migas dalam negeri untuk mengurangi ketergantungan impor.</li>
+        <li>Memperkuat produksi dan efisiensi sektor migas guna memperbaiki neraca perdagangan.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 7. SKILLS & TOOLS ============ -->
+  <section class="pd-section container">
+    <div class="pd-section__head">
+      <p class="eyebrow">Skills &amp; Tools</p>
+      <h2>Skills &amp; Tools</h2>
+    </div>
+
+    <div class="tools-row">
+      <span class="tag">Power BI</span>
+      <span class="tag">Excel</span>
+      <span class="tag">Power Query</span>
+      <span class="tag">Data Cleaning</span>
+      <span class="tag">Data Transformation</span>
+      <span class="tag">Data Visualization</span>
+    </div>
+  </section>
+
+  <!-- ============ 8. RELATED PROJECTS ============ -->
+  <section class="pd-section container">
+    <div class="pd-section__head">
+      <p class="eyebrow">Related Projects</p>
+      <h2>Project Lainnya</h2>
+    </div>
+
+    <div class="related-grid">
+      <article class="project-card">
+        <div class="project-card__thumb">
+          <img 
+          src="../assets/images/dashboard-ekspor-preview.png" 
+          alt="Dashboard Analisis Nilai Ekspor Indonesia">
+        </div>
+        <div class="project-card__body">
+          <span class="tag">Dashboard</span>
+          <h3>Dashboard Analisis Nilai Ekspor Indonesia</h3>
+          <p>Analisis tren ekspor menggunakan Tableau untuk mengidentifikasi pola perdagangan.</p>
+          <a href="dashboard-analisis-ekspor.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__thumb">
+          <img 
+          src="../assets/images/dashboard-sales-performance-preview.png" 
+          alt="Dashboard Sales Performance">
+        </div>
+        <div class="project-card__body">
+          <span class="tag">Dashboard</span>
+          <h3>Sales Performance Dashboard</h3>
+          <p>Dashboard performa penjualan dengan breakdown per wilayah dan produk.</p>
+          <a href="dashboard-sales-performance.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 9. BACK TO PORTFOLIO ============ -->
+  <section class="back-to-portfolio container">
+    <p>Tertarik melihat project lainnya? Jelajahi seluruh portofolio data analytics, riset, dan visual communication saya.</p>
+    <a href="../index.html#projects" class="btn btn--outline">← Kembali ke Portfolio</a>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER (identik dengan Homepage) ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__info">
+      <h2>Mari Terhubung</h2>
+      <p>Terbuka untuk peluang di bidang Data Analytics, International Relations, maupun Administration.</p>
+      <div class="footer__links">
+        <a href="mailto:nadiapuspita303@email.com">nadiapuspita303@email.com</a>
+        <a href="https://linkedin.com/in/nadia-puspita-sarii" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <a href="../assets/cv.pdf" download class="btn btn--accent">Download CV</a>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Nadia Puspita Sari. Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="../project.js"></script>
+</body>
+</html>
