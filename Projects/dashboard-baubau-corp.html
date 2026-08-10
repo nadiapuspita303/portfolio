@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard Analisis Nilai Ekspor Indonesia — Nadia Puspita Sari</title>
-<meta name="description" content="Studi kasus dashboard analisis nilai ekspor Indonesia.">
+<title>Company Portfolio & Marketing Performance — Nadia Puspita Sari</title>
+<meta name="description" content="Studi kasus Sales Performance Dashboard.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -44,24 +44,24 @@
     <span class="breadcrumb__sep">/</span>
     <a href="../index.html#projects">Projects</a>
     <span class="breadcrumb__sep">/</span>
-    <span class="breadcrumb__current">Dashboard Analisis Nilai Ekspor Indonesia</span>
+    <span class="breadcrumb__current">Company Portfolio & Marketing Performance Dashboard</span>
   </div>
 
   <!-- ============ 1. HERO ============ -->
   <section class="project-hero container">
     <p class="eyebrow">Dashboard</p>
-    <h1>Dashboard Analisis Nilai Ekspor Indonesia</h1>
+    <h1>Company Portfolio & Marketing Performance Dashboard</h1>
 
     <div class="project-hero__tools">
-      <span class="tag">BPS</span>
-      <span class="tag">2000-2024</span>
-      <span class="tag">Tableau</span>
-      <span class="tag">Excel</span>
-      <span class="tag">Power Query</span>
+      <span class="tag">Digicamp Vol.1</span>
+      <span class="tag">Telkom Indonesia</span>
+      <span class="tag">Business Analysis</span>
+      <span class="tag">Business Intelligence</span>
+      <span class="tag">Google Data Studio</span>
     </div>
 
     <p class="project-hero__summary">
-      Dashboard interaktif yang menyajikan perkembangan nilai ekspor Indonesia berdasarkan negara tujuan, kawasan, dan periode waktu.
+      Dashboard interaktif untuk menganalisis revenue, efektivitas marketing, konsentrasi portfolio pelanggan, serta risiko status kontrak guna mendukung prioritas strategi sales dan marketing.
     </p>
   </section>
 
@@ -75,11 +75,11 @@
     <div class="overview-grid">
       <div class="overview-block">
         <h3>Project Background</h3>
-        <p>Indonesia merupakan salah satu negara dengan aktivitas ekspor yang terus berkembang dari tahun ke tahun. Data ekspor tersedia dalam jumlah besar, namun masih sulit dipahami apabila hanya disajikan dalam bentuk tabel. Oleh karena itu, dashboard ini dibuat untuk menyajikan informasi ekspor secara visual sehingga pola perdagangan dapat dianalisis dengan lebih mudah.</p>
+        <p>Perusahaan memiliki data portfolio pelanggan yang mencakup revenue, marketing spend, ukuran perusahaan, industri, campaign, dan status kontrak. Dashboard ini dikembangkan untuk mengubah data tersebut menjadi informasi yang lebih terstruktur sehingga pola revenue, efektivitas marketing, dan akun yang membutuhkan perhatian dapat diidentifikasi dengan lebih mudah.</p>
       </div>
       <div class="overview-block">
         <h3>Project Objective</h3>
-        <p>Dashboard ini bertujuan untuk menganalisis perkembangan nilai ekspor Indonesia, membandingkan kontribusi negara tujuan, mengidentifikasi kawasan dengan nilai ekspor terbesar serta membantu memperoleh insight melalui visualisasi interaktif.</p>
+        <p>Dashboard ini bertujuan untuk mengevaluasi sumber revenue, mengukur efektivitas pengeluaran marketing, memahami konsentrasi portfolio berdasarkan ukuran perusahaan, serta mengidentifikasi akun bernilai tinggi yang memiliki risiko pada status kontraknya.</p>
       </div>
     </div>
   </section>
@@ -94,24 +94,28 @@
     <div class="dataset-facts">
       <div>
         <span class="dataset-fact__label">Sumber Data</span>
-        <span class="dataset-fact__value">Badan Pusat Statistik (BPS)</span>
+        <span class="dataset-fact__value">DigiCamp#1 Day 3 - BAU BAU Corp.</span>
       </div>
       <div>
-        <span class="dataset-fact__label">Periode Data</span>
-        <span class="dataset-fact__value">2000–2024</span>
+        <span class="dataset-fact__label">Event</span>
+        <span class="dataset-fact__value">Digicamp Vol. 1 : Crack The Business Code</span>
       </div>
       <div>
         <span class="dataset-fact__label">Jumlah Data</span>
-        <span class="dataset-fact__value">972 baris</span>
+        <span class="dataset-fact__value">200 baris</span>
       </div>
     </div>
 
     <div class="dataset-fields">
-      <span class="tag">Tahun</span>
-      <span class="tag">Negara</span>
-      <span class="tag">Kawasan</span>
-      <span class="tag">Benua</span>
-      <span class="tag">Nilai FOB</span>
+      <span class="tag">Company</span>
+      <span class="tag">Industry</span>
+      <span class="tag">Company Size</span>
+      <span class="tag">Region</span>
+      <span class="tag">Revenue</span>
+      <span class="tag">Marketing Spend</span>
+      <span class="tag">Campaign Type</span>
+      <span class="tag">Contract Status</span>
+      <span class="tag">Sales Rep </span>
     </div>
   </section>
 
@@ -126,19 +130,16 @@
       <div class="prep-block">
         <h3>Data Cleaning</h3>
         <ul>
-          <li>Memeriksa nilai kosong (missing values).</li>
-          <li>Menyesuaikan tipe data.</li>
-          <li>Menghapus data yang tidak diperlukan.</li>
-          <li>Menyeragamkan format penamaan.</li>
+          <li>Memeriksa kelengkapan data pada field utama seperti revenue, marketing spend, dan contract status.</li>
+          <li>Memastikan kategori industri, ukuran perusahaan, campaign, dan status kontrak memiliki penamaan yang seragam.</li>
         </ul>
       </div>
       <div class="prep-block">
         <h3>Data Transformation</h3>
         <ul>
-          <li>Mengelompokkan negara berdasarkan kawasan.</li>
-          <li>Unpivot data tahunan.</li>
-          <li>Menyiapkan field yang digunakan pada dashboard.</li>
-          <li>Menyiapkan data untuk visualisasi.</li>
+          <li>Menyiapkan Calculated Field baru untuk menghitung KPI Active Contracts.</li>
+          <li>Membuat Calculated Field baru untuk KPI Revenue At Risk.</li>
+          <li>Mengidentifikasi Top-revenue companies dengan revenue tinggi yang berstatus Pending atau Expired.</li>
         </ul>
       </div>
     </div>
@@ -154,21 +155,20 @@
     <div class="preview-frame">
       <div class="preview-frame__embed">
         <a
-          href="https://public.tableau.com/views/DASHBOARDANALISISNLAIEKSPORINDONESIA/DashboardNilaiEkspor?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+          href="https://datastudio.google.com/reporting/23c20990-9eb5-4ed8-b42a-30e9acb36f48"
           target="_blank"
           rel="noopener noreferrer">
 
           <img
-          src="../Assets//Images/dashboard-ekspor-preview.png"
-          alt="Dashboard Analisis Nilai Ekspor Indonesia">
+          src="../Assets//Images/dashboard-baubau-corp-preview.jfif"
+          alt="Company Portfolio & Marketing Performance Dashboard">
 
         </a>
       </div>
 
-      </div>
       <div class="preview-frame__actions">
         <a 
-          href="https://public.tableau.com/views/DASHBOARDANALISISNLAIEKSPORINDONESIA/DashboardNilaiEkspor?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+          href="https://datastudio.google.com/reporting/23c20990-9eb5-4ed8-b42a-30e9acb36f48" 
           target="_blank" 
           rel="noopener noreferrer"
           class="btn btn--accent btn--small">
@@ -188,17 +188,23 @@
     <div class="insights-block">
       <h3>Key Findings</h3>
       <ul class="insights-list">
-        <li>Asia menyumbang sekitar 65% nilai ekspor Indonesia dan menjadi kawasan tujuan utama.</li>
-        <li>Tiongkok merupakan negara tujuan ekspor terbesar sepanjang periode analisis.</li>
-        <li>Nilai ekspor menunjukkan tren meningkat dalam jangka panjang meskipun sempat mengalami fluktuasi.</li>
+        <li>Revenue masih terkonsentrasi pada beberapa industri utama, sehingga performa portfolio cukup bergantung pada industri dengan kontribusi revenue terbesar.</li>
+        <li>Perusahaan berukuran Large menyumbang revenue lebih besar dibandingkan proporsi jumlah perusahaannya. Sementara itu, perusahaan Small memiliki jumlah yang lebih banyak tetapi kontribusi revenue relatif lebih kecil.</li>
+        <li>Efektivitas setiap campaign berbeda. Email dan Content Marketing menghasilkan revenue per pengeluaran marketing yang lebih tinggi dibandingkan beberapa campaign lainnya.</li>
+        <li>Pengeluaran marketing yang lebih besar tidak selalu menghasilkan revenue yang lebih tinggi. Hal ini menunjukkan bahwa efektivitas campaign perlu dipertimbangkan, bukan hanya besarnya budget.</li>
+        <li>Sebagian perusahaan klien masih memiliki kontrak yang belum aman, dengan status Pending dan Expired yang berpotensi memengaruhi keberlanjutan revenue.</li>
+        <li>Terdapat perusahaan klien dengan revenue tinggi yang kontraknya berstatus Pending atau Expired, sehingga perlu mendapat perhatian lebih dari tim sales dan marketing.</li>
       </ul>
     </div>
 
     <div class="insights-block">
       <h3>Recommendations</h3>
       <ul class="insights-list insights-list--recommendations">
-        <li>Memperkuat hubungan dagang dengan pasar Asia sebagai tujuan ekspor utama.</li>
-        <li>Mengidentifikasi peluang ekspansi ke kawasan dengan kontribusi yang masih relatif rendah untuk mendukung diversifikasi pasar.</li>
+        <li>Prioritaskan perusahaan klien berukuran Large dan industri dengan kontribusi revenue tinggi untuk mempertahankan sumber pendapatan utama.</li>
+        <li>Fokuskan budget pada campaign yang lebih efisien, terutama campaign dengan revenue per pengeluaran marketing yang tinggi.</li>
+        <li>Evaluasi kembali campaign dengan efisiensi rendah sebelum menambah alokasi budget marketing.</li>
+        <li>Prioritaskan tindak lanjut kontrak perusahaan klien dengan revenue tinggi, terutama yang berstatus Pending atau Expired, untuk mengurangi potensi revenue yang berisiko.</li>
+        <li>Sesuaikan strategi berdasarkan ukuran perusahaan, dengan mempertahankan perusahaan besar sebagai prioritas utama dan mengembangkan perusahaan kecil secara lebih selektif.</li>
       </ul>
     </div>
   </section>
@@ -211,11 +217,10 @@
     </div>
 
     <div class="tools-row">
-      <span class="tag">Tableau</span>
-      <span class="tag">Excel</span>
-      <span class="tag">Power Query</span>
-      <span class="tag">Data Cleaning</span>
-      <span class="tag">Data Transformation</span>
+      <span class="tag">Google Data Studio</span>
+      <span class="tag">Business Intelligence</span>
+      <span class="tag">Business Analysis</span>
+      <span class="tag">Business Understanding</span>
       <span class="tag">Data Visualization</span>
     </div>
   </section>
@@ -231,16 +236,30 @@
       <article class="project-card">
         <div class="project-card__thumb">
           <img 
-          src="../Assets//Images/dashboard-baubau-corp-preview.jfif" 
-          alt="Company Portfolio & Marketing Performance Dashboard">
+          src="../Assets//Images/dashboard-ekspor-preview.png" 
+          alt="Dashboard Analisis Nilai Ekspor Indonesia">
         </div>
         <div class="project-card__body">
           <span class="tag">Dashboard</span>
-          <h3>Company Portfolio & Marketing Performance Dashboard</h3>
-          <p>Analisis company portfolio dan marketing performance menggunakan Google Looker Studio.</p>
-          <a href="dashboard-baubau-corp.html" class="link-arrow">Lihat Detail →</a>
+          <h3>Dashboard Analisis Nilai Ekspor Indonesia</h3>
+          <p>Analisis tren ekspor menggunakan Tableau untuk mengidentifikasi pola perdagangan.</p>
+          <a href="dashboard-analisis-ekspor.html" class="link-arrow">Lihat Detail →</a>
         </div>
-      </article>    
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__thumb">
+          <img 
+          src="../Assets//Images/dashboard-sales-performance-preview.png" 
+          alt="Sales Performance Dashboard">
+        </div>
+        <div class="project-card__body">
+          <span class="tag">Dashboard</span>
+          <h3>Sales Performance Dashboard</h3>
+          <p>Analisis performa penjualan menggunakan Tableau untuk mengidentifikasi tren dan pola penjualan.</p>
+          <a href="dashboard-sales-performance.html" class="link-arrow">Lihat Detail →</a>
+        </div>
+      </article>      
 
       <article class="project-card">
         <div class="project-card__thumb">
@@ -253,20 +272,6 @@
           <h3>Dashboard Perdagangan Migas Indonesia</h3>
           <p>Visualisasi data perdagangan migas untuk mendukung pengambilan keputusan.</p>
           <a href="dashboard-perdagangan-migas.html" class="link-arrow">Lihat Detail →</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-card__thumb">
-          <img 
-          src="../Assets//Images/dashboard-sales-performance-preview.png" 
-          alt="Dashboard Sales Performance">
-        </div>
-        <div class="project-card__body">
-          <span class="tag">Dashboard</span>
-          <h3>Sales Performance Dashboard</h3>
-          <p>Dashboard performa penjualan dengan breakdown per wilayah dan produk.</p>
-          <a href="dashboard-sales-performance.html" class="link-arrow">Lihat Detail →</a>
         </div>
       </article>
     </div>
